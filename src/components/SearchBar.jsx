@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { BsSearch } from "react-icons/bs";
 const SearchBar = () => {
     const [value, setValue] = useState("");
 
@@ -13,13 +13,13 @@ const SearchBar = () => {
     };
 
     return (
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div className="relative flex items-center border-[1px] border-gray-300 w-[400px] rounded-full">
+            <input
+                placeholder="Search your news here..."
+                className="bg-[#E2E2E3] p-4 outline-none"
+            />
+            <BsSearch className="absolute right-6" />
+        </div>
     );
 };
 

@@ -11,11 +11,11 @@ const Home = () => {
     if (!window.localStorage.user) navigation('/signin')
   }, [])
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-auto">
       <div className="flex-none w-1/4 p-3">
         <Sidebar />
       </div>
-      <div className="container w-1/2 p-3 sticky">
+      <div className="w-1/2 p-3">
         <Navbar />
       </div>
       <div className="flex-end w-1/4 p-3">
