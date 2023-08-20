@@ -1,3 +1,4 @@
+<script src="http://localhost:8097"></script>
 import { useState } from 'react'
 import './index.css'
 import Sidebar from './components/Sidebar'
@@ -18,7 +19,7 @@ function App() {
           <Route path='/signin' element={<Signin />} />
         </Routes>
       </BrowserRouter>
-      </GoogleOAuthProvider>
+    </GoogleOAuthProvider>
   )
 }
 
