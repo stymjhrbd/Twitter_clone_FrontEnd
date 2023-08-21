@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import { Link } from "react-router-dom";
+
 import SearchBar from "./SearchBar";
 
 const RightSideBar = () => {
@@ -19,11 +19,11 @@ const RightSideBar = () => {
 
 
     return (
-        <>
-            <div className="flex w-full">
+        <div className="flex justify-center">
+            <div className="flex w-fit">
                 <SearchBar />
             </div>
-            <div className="RightSideBar flex-auto">
+            <div className="RightSideBar flex justify-center">
                 <ul>
                     {hashtags.map((hashtag, index) => (
                         <li key={index}>#{hashtag}</li>
@@ -33,7 +33,7 @@ const RightSideBar = () => {
                 </ul>
             </div>
 
-        </>
+        </div>
     );
 };
 

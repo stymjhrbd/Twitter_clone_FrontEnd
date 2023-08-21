@@ -12,7 +12,7 @@ const ProfileObj = ({ name, picture }) => {
     return (
         <div className='flex gap-2 mt-8 w-full'>
             <img className="w-12 h-12 rounded-full" src={picture} alt="profile-pic" />
-            <button onClick={handleLogout} className='flex-1 rounded-full bg-red-500 text-gray-50 font-semibold text-xl'>Logout</button>
+            <button onClick={handleLogout} className='flex rounded-full bg-red-500 text-gray-50 font-semibold text-lg w-28 items-center justify-center h-12 '>Logout</button>
         </div>
     )
 }

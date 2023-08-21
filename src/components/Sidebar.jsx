@@ -20,7 +20,7 @@ const Sidebar = () => {
     fetchUser()
   }, [])
   return (
-    <div className='flex w-fit flex-col items-start justify-center'>
+    <div className='flex w-fit flex-col items-start justify-center pl-20 h-auto'>
       <div className="flex justify-start p-3 "><a href='/'><img className="w-6 h-6 cursor-pointer" src={twitterWhiteLogo} alt="twitter_logo" /></a></div>
       <ul className='flex flex-col'>
         {SidebarOptions.map(option => (

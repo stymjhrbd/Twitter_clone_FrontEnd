@@ -16,9 +16,9 @@ const SearchBar = () => {
         <div className="relative flex items-center border-[1px] border-gray-300 w-[400px] rounded-full">
             <input
                 placeholder="Search your news here..."
-                className="bg-[#E2E2E3] p-4 outline-none"
+                className=" p-4 outline-none bg-inherit w-[90%] overflow-x-none"
             />
-            <BsSearch className="absolute right-6" />
+            <BsSearch className="absolute right-6 text-lg ml-3" />
         </div>
 
     );
