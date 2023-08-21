@@ -20,6 +20,7 @@ const SearchBar = () => {
             />
             <BsSearch className="absolute right-6" />
         </div>
+
     );
 };
 
