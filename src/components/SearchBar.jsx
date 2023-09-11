@@ -13,9 +13,9 @@ const SearchBar = () => {
     };
 
     return (
-        <div className="relative flex items-center border-[1px] border-gray-300 w-[400px] rounded-full">
+        <div className="relative flex items-center border-[1px] border-gray-300 w-[400px] rounded-full pl-5">
             <input
-                placeholder="Search your news here..."
+                placeholder="Search your tweets here..."
                 className=" p-4 outline-none bg-inherit w-[90%] overflow-x-none"
             />
             <BsSearch className="absolute right-6 text-lg ml-3" />

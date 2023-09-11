@@ -9,8 +9,11 @@ const RightSideBar = () => {
     useEffect(() => {
 
         axios.get('http://localhost:5000/api/hashtags')
+
             .then(response => {
-                setHashtags(response.data);
+
+                setHashtags(response.data.hashtags);
+                console.log(response)
             })
             .catch(error => {
                 console.error('Error fetching hashtags:', error);
@@ -19,8 +22,8 @@ const RightSideBar = () => {
 
 
     return (
-        <div className="flex justify-center">
-            <div className="flex w-fit">
+        <div className="flex justify-center object-contain">
+            <div className="flex w-fit ">
                 <SearchBar />
             </div>
             <div className="RightSideBar flex justify-center">
@@ -28,12 +31,16 @@ const RightSideBar = () => {
                     {hashtags.map((hashtag, index) => (
                         <li key={index}>#{hashtag}</li>
 
+
                     ))}
 
+
                 </ul>
+                {/* {console.log(hashtags.data)} */}
             </div>
 
         </div>
+
     );
 };
 

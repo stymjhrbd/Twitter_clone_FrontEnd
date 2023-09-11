@@ -11,7 +11,7 @@ const Home = () => {
     if (!window.localStorage.user) navigation('/signin')
   }, [])
   return (
-    <div className="flex flex-auto border-[0.2px] border-slate-600">
+    <div className="flex flex-auto border-[0.2px] border-slate-600 overflow-x-hidden">
       <div className="flex-none w-1/4 p-3 border-[0.1px] border-slate-600">
         <Sidebar />
       </div>
